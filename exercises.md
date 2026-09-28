@@ -24,7 +24,7 @@ nên bất kỳ ai cũng gọi được LLM và tiêu ngân sách của em; em c
 nhìn hóa đơn.
 
 Không có mặc định thì pydantic ném `ValidationError` ngay khi đọc cấu hình.
-Em còn thêm `get_settings()` vào `lifespan` để lỗi xảy ra lúc **khởi động**
+Em còn thêm `get_settings()` vào `lifespan` để lỗi xảy ra lúc khởi động
 chứ không đợi request đầu tiên: deploy thiếu secret sẽ fail health check và
 Railway giữ bản cũ, lỗi hiện ra ngay lúc em đang nhìn màn hình.
 
